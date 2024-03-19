@@ -1,0 +1,121 @@
+{
+	"pages": [
+		{
+			"path": "pages/tabBar/home",
+			"style": {
+				"navigationStyle": "custom",
+				"backgroundColorTop":"#0001ae"
+			}
+		},
+		{
+			"path": "pages/tabBar/user",
+			"style": {
+				"navigationStyle": "custom",
+				"backgroundColorTop":"#0001ae"
+			}
+		},
+		{ "path": "pages/common/selectDevice" },
+		{ "path": "pages/common/selectPeople" }
+	],
+	"subPackages": [
+		{
+			"root": "pages/sy-ui",
+			"pages": [
+				{"path": "index","style": { "navigationBarTitleText": "SYUI"}},
+				{"path": "sy-input/index","style": { "navigationBarTitleText": "输入框"}},
+				{"path": "sy-radio/index","style": { "navigationBarTitleText": "单选按钮"}},
+				{"path": "sy-checkbox/index","style": { "navigationBarTitleText": "多选框"}},
+				{"path": "sy-upload/index","style": { "navigationBarTitleText": "上传"}},
+				{"path": "sy-button/index","style": { "navigationBarTitleText": "按钮"}},
+				{"path": "sy-form-config/index","style": { "navigationBarTitleText": "表单配置"}},
+				{"path": "sy-map/index","style": { "disableScroll": true,"navigationBarTitleText": "地图"}},
+				{"path": "sy-tree/index","style": { "navigationBarTitleText": "树形控件"}},
+				{"path": "sy-table/index","style": { "navigationBarTitleText": "表格"}},
+				{"path": "sy-steps/index","style": { "navigationBarTitleText": "步骤条"}},
+				{"path": "sy-picker/index","style": { "navigationBarTitleText": "选择器"}},
+				{"path": "sy-circular/index","style": { "navigationBarTitleText": "圆环进度条"}},
+				{"path": "sy-popover/index","style": { "navigationBarTitleText": "弹出框"}},
+				{"path": "sy-calendar/index","style": { "navigationBarTitleText": "日历"}},
+				{"path": "sy-countdown/index","style": { "navigationBarTitleText": "倒计时"}},
+				{"path": "sy-loading/index","style": { "navigationBarTitleText": "加载提示"}},
+				{"path": "sy-action-sheet/index","style": { "navigationBarTitleText": "操作菜单"}}
+			]
+		},
+		{
+			"root": "pages/home",
+			"pages": [
+				{"path": "repairBills/selectDevice"},
+				{"path": "repairBills/list","style": { "navigationBarTitleText": "维修/寄修单"}},
+				{"path": "repairBills/people/handle","style": { "navigationBarTitleText": "寄修单处理"}},
+				{"path": "repairBills/people/form","style": { "navigationBarTitleText": "寄修结果记录"}},
+				{"path": "repairBills/vehicle/handle","style": { "navigationBarTitleText": "维修单处理"}},
+				{"path": "repairBills/vehicle/form","style": { "navigationBarTitleText": "维修结果记录"}},
+				{"path": "installRegister/list","style": { "navigationBarTitleText": "安装登记"}},
+				{"path": "installRegister/handle","style": { "navigationBarTitleText": "设备安装处理"}},
+				{"path": "installRegister/register","style": { "navigationBarTitleText": "登记安装设备"}},
+				{"path": "installRegister/update","style": { "navigationBarTitleText": ""}}
+			]
+		},
+	  {
+			"root": "pages/user",
+			"pages": [
+				{"path": "login","style": { "navigationStyle": "custom", "navigationBarTitleText": "登录"}}
+			]
+	  },
+	  {
+			"root": "pages/approval",
+			"pages": [
+				{"path": "countList","style": { "navigationBarTitleText": "审批"}},
+				{"path": "approvalList","style": { "navigationBarTitleText": "审批"}},
+				{"path": "Demand/detail","style": { "navigationBarTitleText": "需求申请单详情"}},
+				{"path": "StoragePut/detail","style": { "navigationBarTitleText": "入库申请单详情"}},
+				{"path": "StorageOut/detail","style": { "navigationBarTitleText": "出库申请单详情"}},
+				{"path": "StorageBack/detail","style": { "navigationBarTitleText": "退库申请单详情"}},
+				{"path": "Invoice/detail","style": { "navigationBarTitleText": "开票申请单详情"}},
+				{"path": "ReturnCash/detail","style": { "navigationBarTitleText": "退还押金申请单详情"}},
+				{"path": "ServiceChargeRefund/detail","style": { "navigationBarTitleText": "服务费退款申请单详情"}},
+				{"path": "DeviceExtendEarranty/detail","style": { "navigationBarTitleText": "设备延保申请单详情"}},
+				{"path": "RenewSIM/detail","style": { "navigationBarTitleText": "SIM卡续费申请单详情"}},
+				{"path": "DeviceAllocate/detail","style": { "navigationBarTitleText": "设备调拨申请单详情"}},
+				{"path": "DeviceDamaged/detail","style": { "navigationBarTitleText": "设备报损申请单详情"}},
+				{"path": "DeviceInstall/detail","style": { "navigationBarTitleText": "设备安装申请单详情"}},
+				{"path": "SalesContract/detail","style": { "navigationBarTitleText": "销售合同申请单详情"}},
+				{"path": "Stocktaking/detail","style": { "navigationBarTitleText": "库存盘点申请单详情"}}
+			]
+		}
+	],
+	"tabBar": {
+		"custom": true,
+		"color": "#999999",
+		"selectedColor": "#0001ae",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/tabBar/home",
+				"iconPath": "static/image/tabBar/home.png",
+				"selectedIconPath": "static/image/tabBar/home-on.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabBar/user",
+				"iconPath": "static/image/tabBar/user.png",
+				"selectedIconPath": "static/image/tabBar/user-on.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"backgroundColor": "#F9FAFD",
+		"navigationBarTitleText": "",
+		"backgroundColorTop":"#F9FAFD",
+		"navigationBarBackgroundColor": "#0001ae",
+		"navigationBarTextStyle":"white"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^sy-(.*)": "@/components/sy-ui/components/sy-$1/sy-$1.vue"
+		}
+	}
+}

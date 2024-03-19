@@ -1,0 +1,44 @@
+.tab-bar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 48px;
+	background: white;
+	z-index: 2000;
+	display: flex;
+	padding-bottom: env(safe-area-inset-bottom);
+	box-shadow: 0 1px 3px 0 #E4E3E3;
+}
+
+.tab-bar-item {
+	flex: 1;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.tab-bar-item image {
+	width: 27px;
+	height: 27px;
+	display: block;
+}
+
+.tab-bar-item.custom {
+	align-items: initial;
+	flex-direction: initial;
+}
+
+.tab-bar-item.custom image {
+	position: relative;
+	top: -40px;
+	width: 80px;
+	height: 80px;
+}
+
+
+.tab-bar-item view {
+	font-size: 10px;
+}

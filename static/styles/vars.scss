@@ -1,0 +1,14 @@
+// 主色调
+$APP_COLOR: #13c2c2;
+$APP_COLOR_ACTIVE: #09b5b5;
+/* 正常 */
+$normal: #56bb26;
+/* 异常 */
+$exception: #f00;
+/* 未知 */
+$unknown: #d7d7d7;
+
+:export {
+    APP_COLOR: $APP_COLOR;
+    APP_COLOR_ACTIVE: $APP_COLOR_ACTIVE;
+}

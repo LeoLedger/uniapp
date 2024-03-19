@@ -1,0 +1,110 @@
+
+
+
+// 通用列表筛选头部
+.public-filter-head {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: var(--window-top);
+    z-index: 50;
+    background: #F9FAFD;
+    transition: .1s ease-in-out;
+    &.active {
+        background: #fff;
+        box-shadow: 0 2rpx 7rpx 0 rgba(228, 227, 227, 0.5);
+    }
+    & > .search-wrap {
+        display: flex;
+        align-items: center;
+        padding: 30rpx 0 30rpx 30rpx;
+        .search-input {
+            flex: 1;
+            background: #EFEFF4;
+            border-radius: 35rpx;
+            padding: 0 30rpx;
+            transition: background .3s ease-in-out;
+        }
+        .filter-button {
+            display: flex;
+            align-items: center;
+            padding: 0 15rpx;
+            color: #fff;
+            .button {
+                height: 70rpx;
+                line-height: 70rpx;
+                padding: 0 15rpx;
+                font-size: 36rpx;
+                color: #999;
+                &.active {
+                    color: #0001AE;
+                }
+            }
+        }
+    }
+}
+.public-filter-popover {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-radius: 0 0 40rpx 40rpx;
+    & > .body-wrap {
+        flex: 1;
+        margin-top: -20rpx;
+    }
+}
+// 审批
+.public-approval-list {
+    padding: 0 30rpx;
+    .item {
+        box-shadow: 0 2rpx 7rpx 0 rgba(228, 227, 227, 0.5);
+        border-radius: 14rpx;
+        background: #fff;
+        & + .item {
+            margin-top: 16rpx;
+        }
+        .flex {
+            padding: 0 30rpx;
+            height: 72rpx;
+            .value {
+                flex: 1;
+            }
+            .status {
+                color: $APP_COLOR;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.public-approval-detail {
+    padding: 0 30rpx;
+    .module {
+        margin-top: 30rpx;
+        background: #fff;
+        border-radius: 40rpx;
+        &:first-child {
+            margin-top: 0;
+        }
+        .head-wrap {
+            display: flex;
+            align-items: center;
+            height: 72rpx;
+            &::before {
+                content: '';
+                width: 8rpx;
+                height: 24rpx;
+                background: $APP_COLOR;
+                margin-right: 22rpx;
+            }
+            .text {
+                flex: 1;
+                color: $APP_COLOR;
+                font-weight: bold;
+            }
+        }
+        .body-wrap {
+            padding: 0 30rpx;
+        }
+    }
+}
